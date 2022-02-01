@@ -21,8 +21,13 @@ module.exports = {
             }
          },
          {
-            test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, "css-loader"],
+            // test: /\.css|.styl$/i, //para stylus
+            test: /\.css|.scss$/i,
+            use: [MiniCssExtractPlugin.loader, 
+               "css-loader",
+               // "stylus-loader",
+               "sass-loader"
+            ],
          }
       ]
    },
