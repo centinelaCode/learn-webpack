@@ -1,3 +1,4 @@
+// const API = 'https://randomuser.me/api/'
 const API = process.env.API;
 
 const getData = async (id) => {
